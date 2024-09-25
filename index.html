@@ -28,7 +28,7 @@
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet " href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
@@ -49,6 +49,7 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-2 publication-title">RoDUS: Robust Decomposition of Static and Dynamic Elements in Urban Scenes</h1>
+          <h2 class="subtitle is-4" style="margin-top:1rem">ECCV 2024</h2>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=epUgvTAAAAAJ">Thang-Anh-Quan Nguyen</a>,</span>
@@ -67,7 +68,7 @@
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block">Huawei Paris Research Center</span>
+            <span class="author-block">Noah's Ark, Huawei Paris Research Center, France</span>
           </div>
 
           <div class="column has-text-centered">
@@ -106,8 +107,8 @@
     <div class="hero-body">
       <img src="./static/images/teaser.png" width="80%"/>
       <p>
-        RoDUS is a neural scene representation designed to decompose 4D dynamic
-        scenes into two elements: moving foreground and static background. This decomposition remains consistent across all photometric, geometric, and semantic aspects
+        RoDUS is a neural scene representation designed to decompose 4D dynamic scenes into two elements: moving foreground and static background. 
+        This decomposition remains consistent across all photometric, geometric, and semantic aspects.
       </p>
     </div>
   </div>
@@ -120,12 +121,12 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          The task of separating dynamic objects from static environments using NeRFs has been widely studied in recent years. 
-          However, capturing large-scale scenes still poses a challenge due to their complex geometric structures and unconstrained dynamics. 
-          Without the help of 3D motion cues, previous methods often require simplified setups with slow camera motion and only a few/single dynamic actors, leading to suboptimal solutions in most urban setups. 
-          To overcome such limitations, we present RoDUS, a pipeline for decomposing static and dynamic elements in urban scenes, with thoughtfully separated NeRF models for moving and non-moving components. 
-          Our approach utilizes a robust kernel-based initialization coupled with 4D semantic information to selectively guide the learning process. 
-          This strategy enables accurate capturing of the dynamics in the scene, resulting in reduced artifacts caused by NeRF on background reconstruction, all by using self-supervision. 
+          The task of separating dynamic objects from static environments using NeRFs has been widely studied in recent years.
+          However, capturing large-scale scenes still poses a challenge due to their complex geometric structures and unconstrained dynamics.
+          Without the help of 3D motion cues, previous methods often require simplified setups with slow camera motion and only a few/single dynamic actors, leading to suboptimal solutions in most urban setups.
+          To overcome such limitations, we present RoDUS, a pipeline for decomposing static and dynamic elements in urban scenes, with thoughtfully separated NeRF models for moving and non-moving components.
+          Our approach utilizes a robust kernel-based initialization coupled with 4D semantic information to selectively guide the learning process.
+          This strategy enables accurate capturing of the dynamics in the scene, resulting in reduced floating artifacts in the reconstructed background, all by using self-supervision.
           Notably, experimental evaluations on KITTI-360 and Pandaset datasets demonstrate the effectiveness of our method in decomposing challenging urban scenes into precise static and dynamic components.
         </div>
       </div>
@@ -174,12 +175,12 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{nguyen2024rodus,
-      title={RoDUS: Robust Decomposition of Static and Dynamic Elements in Urban Scenes},
-      author={Nguyen, Thang-Anh-Quan and Rold{\~a}o, Luis and Piasco, Nathan and Bennehar, Moussab and Tsishkou, Dzmitry},
-      journal={arXiv preprint arXiv:2403.09419},
-      year={2024}
-    }</code></pre>
+    <pre><code>@inproceedings{nguyen2024rodus,
+    title={RoDUS: Robust Decomposition of Static and Dynamic Elements in Urban Scenes},
+    author={Nguyen, Thang-Anh-Quan and Rold{\~a}o, Luis and Piasco, Nathan and Bennehar, Moussab and Tsishkou, Dzmitry},
+    booktitle={European Conference on Computer Vision},
+    year={2024}
+}</code></pre>
   </div>
 </section>
 
